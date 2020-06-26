@@ -22,8 +22,10 @@ namespace BigSchool.Controllers.Api
         {
             var userId = User.Identity.GetUserId();
             var course = _dbContext.Courses.Single(c => c.Id == id && c.LecturerID == userId);
+
             if (course.IsCanceled)
                 return NotFound();
+
             course.IsCanceled = true;
             _dbContext.SaveChanges();
 

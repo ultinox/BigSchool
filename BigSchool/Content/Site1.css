@@ -25,8 +25,8 @@ textarea {
 
 /* overide CSS*/
 .navbar-inverse{
-    background:#d40d50;
-    border-color:#fbf6f6;
+    background:#0094ff;
+    border-color:#ffffff;
 }
 .navbar-inverse .navbar-nav >li >a{
     color:white;
@@ -43,7 +43,7 @@ textarea {
 }
 .course > li .date{
     text-align:center;
-    background-color:#d41d50;
+    background-color:#0094ff;
     color:white;
     width:60px;
     border-radius:8px;

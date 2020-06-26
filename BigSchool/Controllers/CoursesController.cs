@@ -104,7 +104,7 @@ namespace BigSchool.Controllers
             return View("Create",viewModel);
         }
         [Authorize]
-        public ActionResult Details(int id)
+        /*public ActionResult Details(int id)
         {
             var userId = User.Identity.GetUserId();
             var course = _dbContext.Courses.Single(c => c.Id == id);
@@ -119,7 +119,7 @@ namespace BigSchool.Controllers
                 Id = course.Id
             };
             return View("Details", viewModel);
-        }
+        }*/
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
